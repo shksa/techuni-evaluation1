@@ -50,6 +50,12 @@ describe('when the amount to change is exactly equal to a particular denominatio
     const expected = [0, 0, 0, 1, 0]
     expect(result).toEqual(expected)
   })
+
+  test('brute force approach for input 100, [1, 5, 10, 25, 100]', () => {
+    const result = change(100, [1, 5, 10, 25, 100])
+    const expected = [0, 0, 0, 0, 1]
+    expect(result).toEqual(expected)
+  })
   // test('', () => {
   //   expect().toBe()
   // })
