@@ -24,4 +24,10 @@ describe('testing findAnswer fn', () => {
     const expected = -1
     expect(result).toEqual(expected)
   })
+
+  test('testing findAnswer fn for input 1, 40, [1, 5, 10, 25, 100]', () => {
+    const result = findAnswer(1, 40, [1, 5, 10, 25, 100])
+    const expected = [5, 10, 25]
+    expect(result).toEqual(expected)
+  })
 })
