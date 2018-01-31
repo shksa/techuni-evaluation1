@@ -12,8 +12,9 @@ function change(value, denominations) {
     }
   }
   const resultList = []
+  const resSet = new Set(result)
   for (let i = 0; i < denominations.length; i += 1) {
-    if (result[i] === denominations[i]) {
+    if (resSet.has(denominations[i])) {
       resultList.push(1)
     } else {
       resultList.push(0)
