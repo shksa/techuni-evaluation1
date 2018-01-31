@@ -9,7 +9,7 @@ function findAnswer(startIdx, value, denominations) {
         break
       }
     } else if (remainingValue < denominations[i]) {
-      answer = -1
+      answer = 'try from next index'
       break
     }
   }

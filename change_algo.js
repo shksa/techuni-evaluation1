@@ -19,7 +19,7 @@ function change(value, denominations) {
   let optimalDenoms
   for (let startIdx = 0; startIdx < denominations.length; startIdx += 1) {
     optimalDenoms = findAnswer(startIdx, value, denominations)
-    if (optimalDenoms === -1) {
+    if (optimalDenoms === 'try from next index') {
       continue
     } else {
       break
