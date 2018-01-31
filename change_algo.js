@@ -28,11 +28,6 @@ function change(value, denominations) {
 
   const result = makeResultList(optimalDenoms, denominations)
 
-
-  // const zerosToFill = denominations.length - result.length
-  // for (let i = 0; i < zerosToFill; i += 1) {
-  //   answer.push(0)
-  // }
   return result
 }
 
